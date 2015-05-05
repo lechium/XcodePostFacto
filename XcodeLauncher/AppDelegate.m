@@ -42,6 +42,7 @@
     if (self.frameworkLocation == nil)
     {
         NSLog(@"couldnt find XPF framework or user cancelled");
+        [[NSApplication sharedApplication] terminate:nil];
         return;
     }
     
